@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "URL Blocker",
+    "version": "1.0",
+    "permissions": [
+        "webRequest",
+        "webRequestBlocking",
+        "declarativeNetRequest",
+        "tabs",
+        "storage"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "host_permissions": [
+        "*://*.youtube.com/*"
+    ],
+    "description": "Blocks access to youtube.com/shorts.",
+    "icons": {
+        "48": "icon.png"
+    }
+}
